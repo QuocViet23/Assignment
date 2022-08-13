@@ -1,0 +1,263 @@
+* {
+    box-sizing: border-box;
+    padding:0px;
+    margin: 0px;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+  
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  
+  @media only screen and (max-width: 600px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+  }
+  .swapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .hao {
+    position:fixed;
+    z-index: 1000;
+  }
+
+
+  body{
+    font-family: Tahoma,sans-serif,Helvetica,Arial;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  header.col-12{
+    background-color: #333;
+    position: relative;
+    width:  1200px;
+    margin: 0 auto;
+    padding: 0px;
+  }
+  .container{
+    width: 1020px;
+    margin: 0 auto;
+    padding: 2px 15px;
+  }
+  
+  .container img{
+    float: left;
+    width: 100px;
+    height: 50px;
+  }
+  .tim{
+    position: absolute;
+    font-size: 16px;
+    padding: 6px 12px;
+    left: 500px;
+    bottom: 0px;
+    top: 9px;
+    height: 32px;
+    width: 420px;
+  }
+  .fa-search {
+   padding: 8px 8px;
+   position: absolute;
+   left: 890px;
+   bottom: 0px;
+   top: 9px;
+
+  }
+  .container ul li{
+    float: right;
+    padding: 15px 0px;
+    display: block;
+  }
+  .container ul li a{
+    color: aliceblue;
+    text-decoration: none;
+  }
+
+
+
+
+
+  nav.col-12{
+    background-color: #e4e4e4;
+    color: #333;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0px;
+  } 
+   ul.menu > li {
+    float: left;
+    display:inline-block;
+    padding: 0px;
+  }
+  ul.menu > li >a{
+    display:block;
+    color: #333;
+    text-decoration:none;
+    padding: 0 10px;
+    line-height: 40px;
+  }
+  ul.menu > li >a:hover{
+    color: #ae4ad9;
+    background-color: #fff;   
+  }
+
+
+  .main{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0px;
+    background-color: #ddd;
+  }
+  .thanh{
+    width: 1020px;
+    margin: 0 auto;
+    padding-top: 100px;
+  }
+  ul.trangchu li{
+    float: left;
+    padding: 0 10px;
+    display:inline-block;
+  }
+  ul.trangchu li a {
+    text-decoration:none;
+    display:block;
+    color: #2980b9;
+    margin-bottom: 10px;
+  }
+  .cart{
+    text-align: center;
+  }
+  .mau {
+    background-color: #f9f9f9;
+  }
+  .cartImg{
+    display: flex;
+    align-items: center;
+  }
+  .cartImg img{
+    padding: 5px;
+  }
+#main{
+    margin-bottom: 5px;
+}
+P{
+    font-size: 18px;
+    margin: 16px 0;
+}
+button{
+    width: 70px;
+    height: 30px;
+    margin-bottom: 10px;
+    background: #fff;
+    border: 1px solid #e4e4e4;
+}
+#number{
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    display: inline-block;
+}
+.bun{
+    width: 30px;
+}
+.truck {
+    margin-top: 18px;
+    margin-bottom: 10px;
+}
+.them{
+    width: 30%;
+    height: 50px;
+    margin-right: 10px;
+    border: 1px solid #f44336;
+    background-color: #f9c8be;
+    color: #f44336;
+}
+.them:hover{
+    opacity: 70%;
+}
+.muahang{
+    width: 15%;
+    height: 50px;
+    background: #ee4d2d;
+    color: #fff;
+    border-radius: 2px;
+    border: 1px solid #f44336;
+}
+.muahang:hover{
+    opacity: 70%;
+}
+.wmain{
+  background-color: #f9f9f9;
+}
+.vanchuyen{
+    color: #757575;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .cuoi{
+    padding: 0.01em 16px;
+    width: 100%;
+    background-color:black;
+    color: #fff;
+    display: table;
+    text-align: center;
+  }
+  .cuoi button{
+    width: 100%;
+    padding: 7px;
+    background-color: #f44336;
+    color: #fff;
+  }
+  .cuoi button:hover{
+    opacity: 70%;
+  }
+  .about>p> a{
+    color: inherit;
+    display: block;
+  }
+  .store{
+    text-align: left;
+  }
+  
+input {
+    padding: 8px 13px;
+    width: 100%;
+    display: block;
+}
+h3{
+  font-size: 20px;
+  margin: 20px 0;
+}
